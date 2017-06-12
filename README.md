@@ -34,4 +34,17 @@ Here a sample with TypeScript:
 * **Git**: This `eclipse/tm4e` repository is the reference repository to contribute to `tm4e`
 * **Build and CI**: build can be performed with a simple `mvn clean verify`, continuous integration and deployment is performed by CI jobs at https://hudson.eclipse.org/tm4e
 * **Developers mailing-list**: Contributors are also expected to subscribe the [tm4e-dev mailing-list](https://dev.eclipse.org/mailman/listinfo/tm4e-dev).
-* **Becoming a committer**: as usual with Eclipse.org projects, anyone who's made significant contributions and who 
+* **Becoming a committer**: as usual with Eclipse.org projects, anyone who's made significant contributions and who
+
+## Setting up TM4E for development
+
+After downloading the sources from the github repo, to get the environment, two .target definition files
+are provided at /tm4e/target-platform -- open the selected file inside Eclipse and click
+"Set as Target Platform" (note that this folder isn't configured as a project, so, it has to be
+opened through File > Open).
+
+The `tm4e-target.target` provides a target which allows running TM4E (to be used if you're only
+interested in running TM4E) and `running-platform-plus-tm4e.target`, which provides a target that
+has the current running platform and TM4E (to be used if you are also developing
+other plugins which require the current target platform).
+
